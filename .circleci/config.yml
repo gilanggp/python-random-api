@@ -31,9 +31,9 @@ jobs:
       - run:
           name: Build and push to Docker Hub
           command: |
-            docker build -t gilangp/py-api-1:0.0.3 .
+            docker build -t gilangp/py-cal-api:0.0.1 .
             echo "dckr_pat_QfPimIAoqy9Jtu80BgzhTluf_oU" | docker login -u "gilangp" --password-stdin
-            docker push gilangp/py-api-1:0.0.3
+            docker push gilangp/py-cal-api:0.0.1
 
 workflows:
   build-master:
